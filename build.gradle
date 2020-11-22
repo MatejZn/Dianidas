@@ -1,0 +1,48 @@
+ext {
+    androidSupportVersion = '27.1.1'
+    constraintLayoutVersion = '1.1.2'
+
+    junitVersion = '4.12'
+    testRunnerVersion = '1.0.2'
+    espressoVersion = '3.0.2'
+
+    realmVersion = '5.3.1'
+    realmAdaptersVersion = '2.1.1'
+    realmFieldsVersion = '1.1.1'
+    jodaTimeVersion = '2.10'
+    picassoVersion = '2.71828'
+    rxJavaVersion = '2.2.0'
+    rxAndroidVersion = '2.0.2'
+    numberPickerVersion = '1.0.7'
+    butterknifeVersion = '8.8.1'
+    mpAndroidChartVersion = 'v3.0.3'
+    fabVersion = '1.6.4'
+    daggerVersion = '2.16'
+}
+
+buildscript {
+    ext.kotlinVersion = '1.2.51'
+    ext.realmPluginVersion = '5.3.1'
+
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.2.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+        classpath "io.realm:realm-gradle-plugin:$realmPluginVersion"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

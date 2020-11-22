@@ -1,0 +1,2 @@
+Dianidas app was developed by Matej Žnidarič, medical student from Faculty of Medicine, University of Maribor, Slovenia for
+the purposes of SMART HEALTH HACKATHON PRAGUE 2020.
